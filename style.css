@@ -1,0 +1,138 @@
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #a10707;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: solid 3px white;
+    font-family: Playfair Display;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 22px;
+  }
+  li a:hover{
+    background-color: white;
+    color: #a10707;
+  }
+  #welcome-section{
+    background-color: #00004d;
+    width: 100vw;
+    height: 100vh;
+  }
+  h1{
+    color: #add8e6;
+    font-family: Playfair Display;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+  }
+  #projects{
+    background-color: #add8e6;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 15% 10% 15% 10% 15% 10%;
+    grid-template-rows: 30vh 40vh 30vh;
+    grid-column-gap: 40px;
+  }
+  #contact{
+    background-color: #00004d;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40vh;
+  }
+  .project-tile{
+     background-color: #a10707;
+     border: 3px solid #00004d;
+  }
+  #project1{
+    grid-column: 2/3 ;
+    grid-row: 2/3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+  }
+  #project2{
+    grid-column: 4/5 ;
+    grid-row: 2/3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+  }
+  #project3{
+    grid-column: 6/7 ;
+    grid-row: 2/3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+  #one {
+    color: #a10707;
+    font-family: Apple Chancery, cursive;
+  }
+  .top {
+    text-align: center;
+    padding-top: 40vh;
+  }
+  #one {
+    font-size: 20px;
+  }
+  img {
+    width: 90px;
+    padding-left : 40px;
+    padding-right : 40px;
+  }
+  .bottom {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  div.images{
+    display: flex;
+    justify-content: center;
+  }
+  #main{
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 500px) {
+    #one , a , li {
+      font-size: 10px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    img.social {
+      width: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    #projects{
+      grid-column-gap: 0px;
+    }
+  }
